@@ -1,0 +1,22 @@
+.app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.votos-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
