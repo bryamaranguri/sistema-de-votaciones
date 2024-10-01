@@ -4,21 +4,24 @@ import Candidato from './components/Candidato/Candidato';
 import TotalVotos from './components/TotalVotos/TotalVotos';
 import VotosIndividuales from './components/VotosIndividuales/VotosIndividuales';
 import Filtro from './components/Filtro/Filtro';
+import './App.css';
 
 function App() {
   return (
     <VotingProvider>
-      <div>
-        <h1>Sistema de Votaciones</h1>
+      <div className="app-container">
+        <h1 className="title">Sistema de Votaciones</h1>
         <Filtro />
-        <div>
+        <div className="candidates-container">
           <Candidato name="candidato1" />
           <Candidato name="candidato2" />
           <Candidato name="candidato3" />
           <Candidato name="candidato4" />
         </div>
-        <TotalVotos />
-        <VotosIndividuales />
+        <div className="results-container">
+          <TotalVotos />
+          <VotosIndividuales />
+        </div>
       </div>
     </VotingProvider>
   );

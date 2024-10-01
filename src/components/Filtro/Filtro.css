@@ -1,0 +1,16 @@
+.filtro-container {
+  display: flex;
+  flex-direction: column; /* Si quieres que el checkbox esté encima */
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+.candidatos-container {
+  display: flex;
+  justify-content: space-between; /* Distribuir el espacio horizontalmente */
+  flex-wrap: wrap; /* Permitir que los elementos se muevan a la siguiente línea si es necesario */
+}
+
+.filtro-label {
+  flex: 1; /* Hacer que cada label tome el mismo espacio */
+  text-align: center; /* Centrar texto en cada label */
+}
